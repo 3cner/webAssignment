@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Bakery Cafe HTML Template by Tooplate</title>
+    <link rel = "icon" href = "img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+
+    <!--js for availability checker-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>    
+    
+<!--
+
+Tooplate 2126 Antique Cafe
+
+https://www.tooplate.com/view/2126-antique-cafe
+
+-->
+</head>
+<body>    
+    <!-- Intro -->
+
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/shore-view.jpg">
+        <nav id="tm-nav" class="fixed w-full">
+            <div class="tm-container mx-auto px-2 md:py-6 flex items-center justify-between">
+                <a href="#intro">
+                    <img src="img/logo.jpg" alt="Aspendale Shore Motel Logo" style="height: 100px; width: auto;">
+                </a>
+            <div class="tm-container mx-auto px-2 md:py-6 text-right">
+                <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Activities</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Contact</a></li>
+                </ul>   
+            </div>            
+        </nav>
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
+                    <h1 class="text-white text-5xl tm-logo-font mb-5">Aspandale Shore Motel</h1>
+                    <p class="tm-text-gold tm-text-2xl">Relax by the shore, unwind with "comfort"</p>
+                </div>    
+                <div class="bg-black bg-opacity-70 p-10 mb-5">
+                    <p class="text-white leading-8 text-sm font-light">
+                        Welcome to Aspandale Shore Motel, where comfort meets the coasts. Please check availability before booking our rooms!
+                    	If you have any question, please don't hessitate to <a  href="#contact">reach us</a>. </p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-black bg-opacity-70 p-10 mb-5">
+                        <label for="checkin-checkout" class="tm-text-gold tm-text-2xl">Select your travel dates:</label>
+                        <input type="text" id="checkin-checkout" placeholder="Select dates" readonly>
+                        <button id="check-availability">Check Availability</button>
+                        <p id="availability-result"></p>  
+                    </div>
+            
+                </div>                
+            </div>
+        </div>        
+    </div>
+    <!-- Activities -->
+    <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="img/people-playing-by-the-shore.jpg">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="text-center mb-16">
+                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Activities around Motel</h2>
+            </div>            
+            <div class="flex flex-col lg:flex-row justify-around items-center">
+                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/golfing.jpg" alt="Image" class="facility-images">
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Golf</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Centrally located for easy access to major golf courses</div>
+                        </div>                    
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/yatch.jpg" alt="Image" class="facility-images">
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Yatching</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Located close to several Yatch clubs</div>
+                        </div>                    
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/boating.jpg" alt="Image" class="facility-images">
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Boating</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Great location for Boating</div>
+                        </div>                    
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <img src="img/fishing.jpg" alt="Image" class="facility-images">
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Fishing</h3>
+                            <div class="text-white text-md sm:text-lg font-light">Bait and hire shops nearby, boat hire operator is also available</div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <div class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Water scootering</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">There are water scooters for hire nearby motel</div>
+                        </div>
+                        <img src="img/water-scootering.jpg" alt="Image" class="facility-images">                   
+                    </div>
+                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <div class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Cycling</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Several bike trails located just near the motel</div>
+                        </div>
+                        <img src="img/biking.jpg" alt="Image" class="facility-images">                    
+                    </div>
+                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <div class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Water skiing</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">10 minute drive from the famous patterson River</div>
+                        </div>   
+                        <img src="img/water-skiing.jpg" alt="Image" class="facility-images">                 
+                    </div>
+                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">                    
+                        <div class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Rowing</h3>
+                            <h3 class="text-white text-md sm:text-lg font-light mb-1">Rowing clubs and other facilites located nearby</h3>
+                        </div> 
+                        <img src="img/rowing.jpg" alt="Image" class="facility-images">                   
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/bg-1.jpg">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
+                <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
+                    <h2 class="mb-6 tm-text-green text-4xl font-medium">Why our motel?</h2>
+                    <ul class="mb-6 text-base leading-8">
+                        <li>- The perfect place for a quiet, relaxing time by the sea</li>
+                        <li>- Private access to a safe, clean beach</li>
+                        <li>- Just 23 Kms from Melbourne City Centre</li>
+                        <li>- Close to Moorabbin Airport</li>
+                        <li>- Walking distance to shopping, cinemas, and restaurants</li>
+                        <li>- Close to Mordialliac railway station for direct trains to Melbourne City</li>
+                        <li>- Mordialliac Creek Pier minutes away for a nice walk or fishing</li>
+                    </ul>                    
+                </div>
+                <a href="#contact" class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
+                    <i class="far fa-comments mr-4"></i>
+                    Contact
+                </a>
+            </div>           
+        </div>        
+    </div>
+    <div id="contact" class="parallax-window relative" data-parallax="scroll" data-image-src="img/bg-2.jpg">
+        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                    <h2 class="text-3xl mb-6 tm-text-green">Contact Us</h2>
+                    <p class="mb-6 text-lg leading-8">
+                        Feel free to reach out to us. We will be more than happy to asnwer any question you have!   
+                    </p>
+                    <p class="mb-10 text-lg">
+                        <span class="block mb-2">Tel: <a href="tel:61395806140" class="hover:text-yellow-600 transition">61-3-9580 6140</a></span>
+                        <span class="block mb-2">Fax: <a href="tel:61395806005" class="hover:text-yellow-600 transition">61-3-9580 6005</a></span>
+                        <span class="block">Email: <a href="mailto:admin@aspendaleshoremotel.com.au" class="hover:text-yellow-600 transition">admin@aspendaleshoremotel.com.au</a></span>                        
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.417265045528!2d145.08887077547442!3d-38.01405074551069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66d9d2f790c7f%3A0x46699bad600a47c8!2sAspendale%20Shore%20Motel!5e0!3m2!1sen!2sau!4v1725788811831!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
+                    <form action="" method="POST" class="text-lg">
+                        <input type="text" name="name" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Name" required="" />
+                        <input type="email" name="email" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Email" required="" />
+                        <textarea rows="6" name="message" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Message..." required=""></textarea>
+                        <div class="text-right">
+                            <button type="submit" class="text-white hover:text-yellow-500 transition">Send it</button>
+                        </div>                        
+                      </form>
+                </div>
+            </div>
+            <footer class="absolute bottom-0 left-0 w-full">
+                <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
+                    <span>Copyright 2022 Antique Cafe. All rights reserved.</span>
+                    <span class="mt-5 md:mt-0">Design: <a href="https://www.tooplate.com" target="_parent">Tooplate</a></span>
+                </div>                
+            </footer>
+        </div>        
+    </div>    
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/availabilityChecker.js"></script> <!--js for checking-->
+    <script>
+
+        function checkAndShowHideMenu() {
+            if(window.innerWidth < 768) {
+                $('#tm-nav ul').addClass('hidden');                
+            } else {
+                $('#tm-nav ul').removeClass('hidden');
+            }
+        }
+
+        $(function(){
+            var tmNav = $('#tm-nav');
+            tmNav.singlePageNav();
+
+            checkAndShowHideMenu();
+            window.addEventListener('resize', checkAndShowHideMenu);
+
+            $('#menu-toggle').click(function(){
+                $('#tm-nav ul').toggleClass('hidden');
+            });
+
+            $('#tm-nav ul li').click(function(){
+                if(window.innerWidth < 768) {
+                    $('#tm-nav ul').addClass('hidden');
+                }                
+            });
+
+            $(document).scroll(function() {
+                var distanceFromTop = $(document).scrollTop();
+
+                if(distanceFromTop > 100) {
+                    tmNav.addClass('scroll');
+                } else {
+                    tmNav.removeClass('scroll');
+                }
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
